@@ -1,0 +1,11 @@
+
+@import url('http://fonts.cdnfonts.com/css/aldo-the-apache');
+@import url('http://fonts.cdnfonts.com/css/norwester');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root{
+    --font-primaria: 'Aldo the Apache', sans-serif;  /* TITULOS */
+    --font-secundaria: 'Norwester', sans-serif; /* SUBTITULOS */
+    --font-terciaria: 'Poppins', sans-serif; /* PARRAFOS */
+}
