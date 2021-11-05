@@ -6,38 +6,87 @@
 $font-primaria: 'Aldo the Apache', sans-serif;  /* TITULOS */
 $font-secundaria: 'Norwester', sans-serif; /* SUBTITULOS */
 $font-terciaria: 'Poppins', sans-serif; /* PARRAFOS */
+$clr-red: #E4191E;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .hero-content{
-    background-image: url("../img/bg-hero-section1.png");
-    background-position: top right;
-    background-repeat: no-repeat;
+    background: url("../img/bg-hero-section1.png") top right no-repeat, url("../img/bg-hero-section2.png") bottom no-repeat;
     background-attachment: fixed;
-    background-size: 95%;
+    background-size: 95%, 100% 50%;
     height: 100vh;
     width: 100%;
-    .navbar{
+    .navbar__container{
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 10%;
-        padding: 1% 4%;
+        gap: 4%;
+        padding: 2% 6.5%;
         .logo{
             min-width: 0;
-            max-width: 180px;
-            max-height: 180px;
+            width: 99px;
+            max-height: 8.6875rem;
         }
         .nav{
-            width: 1000px;
-            height: auto;
-            .bg-nav{
-
+            position: relative;
+            .nav__bg{
+                max-width: 100%;
             }
+            .nav__menu{
+                width: 81%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                // gap: 10.5%;
+                list-style-type: none;
+                display: flex;
+                font-family: $font-primaria;
+                font-size: 160%;
+                line-height: 1;
+            }
+            .nav__menu li:not(:last-child){
+                padding-right: 5.25%;
+                border-right: 1px solid white;
+            }
+            .nav__menu li:not(:first-child){
+                padding-left: 5.25%;
+            }
+            .nav__menu li a:hover{
+                color: $clr-red;
+                transition: 300ms ease-in-out;
+            }
+            /* Fade in */
+            .nav__menu a{
+                display: block;
+                position: relative;
+                padding: 0em 0;
+            }
+            .nav__menu a::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 80%;
+                height: 0.08em;
+                background-color: $clr-red;
+                opacity: 0;
+                transition: opacity 300ms, transform 300ms;
+            }
+            
+            .nav__menu a:hover::after,
+            .nav__menu a:focus::after {
+                opacity: 1;
+                transform: translate3d(0, 0.2em, 0);
+            }
+  
         }
     }
     
