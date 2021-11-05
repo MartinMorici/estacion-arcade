@@ -16,7 +16,13 @@ a {
 }
 
 .hero-content {
+<<<<<<< HEAD
   background: url("../img/bg-hero-section1.png") top right no-repeat, url("../img/bg-hero-section2.png") bottom no-repeat;
+=======
+  background-image: url("../img/bg-hero-section1.png"); /* Background */
+  background-position: top right;
+  background-repeat: no-repeat;
+>>>>>>> e4c848b758fc664e78975c27ff4cb68a370595af
   background-attachment: fixed;
   background-size: 95%, 100% 50%;
   height: 100vh;
