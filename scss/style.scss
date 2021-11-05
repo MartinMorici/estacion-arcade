@@ -1,4 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/aldo-the-apache');
 @import url('http://fonts.cdnfonts.com/css/norwester');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -7,6 +6,11 @@ $font-primaria: 'Aldo the Apache', sans-serif;  /* TITULOS */
 $font-secundaria: 'Norwester', sans-serif; /* SUBTITULOS */
 $font-terciaria: 'Poppins', sans-serif; /* PARRAFOS */
 $clr-red: #E4191E;
+
+@font-face{
+    font-family: "Aldo the Apache";
+    src: url('../fonts/AldotheApache.ttf');
+}
 
 *{
     margin: 0;
