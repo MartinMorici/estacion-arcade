@@ -61,7 +61,7 @@
                 bottom: 0;
                 left: 0;
                 width: 80%;
-                height: 0.08em;
+                height: 0.1em;
                 background-color: $clr-red;
                 opacity: 0;
                 transition: opacity 300ms, transform 300ms;
@@ -191,7 +191,6 @@
                 }
             }
         }
-
         .carousel-indicators [data-bs-target] {
             background-color: #B01018;
         }
