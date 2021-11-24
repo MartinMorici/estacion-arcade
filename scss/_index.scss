@@ -396,6 +396,29 @@
 
 }
 
+.sumate-mensaje{
+    position: relative;
+    margin-left: 100px;
+    top: 294px;
+    .msj1-sumate{
+        width: 35.287vw;
+        max-width: 510px;
+    }
+    .msj2-sumate{
+        position: absolute;
+        width: 52.431vw;
+        max-width: 760px;
+        top: -3vw;
+        left: -7vw;
+    }
+    .sumate-titulo{
+        top: 53px;
+        left: 60px;
+        transform: rotate(-10deg);
+        font-size: #{"min(2.4vw, 38px)"}; 
+    }
+}
+
 .sumate{
     background-image: url('../img/index/sumate-fondo.png');
     background-repeat: no-repeat;
@@ -404,32 +427,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    .sumate-mensaje{
-        position: relative;
-        left: -25.3vw;
-        top: 0vw;
-        .msj1-sumate{
-            width: 35.287vw;
-            max-width: 510px;
-        }
-        .msj2-sumate{
-            position: absolute;
-            width: 52.431vw;
-            max-width: 760px;
-            top: -3vw;
-            left: -7vw;
-        }
-        .sumate-titulo{
-            top: 53px;
-            left: 60px;
-            transform: rotate(-10deg);
-            font-size: #{"min(2.4vw, 38px)"}; 
-        }
-    }
+
     .container-sumate{
-        margin-top: 108px;
+        margin-bottom: 120px;
         .parrafo-sumate{
             max-width: 1042px;
             margin-top: 10px;
@@ -452,11 +454,9 @@
     
 
 @media (min-width:1800px) {
-    .sumate{
-        .sumate-mensaje{
-            .sumate-titulo{
-                top: 40px;
-            }
+    .sumate-mensaje{
+        .sumate-titulo{
+            top: 40px;
         }
     }
 }
