@@ -160,43 +160,306 @@
 .carousel-img{
     max-width: 100%;
 }
-/*---------- CAROUSEL ABOUT ----------*/
+
 .about{
-    height: 750px;
     background-image: url("../img/index/bg-punteado.png");
     background-repeat: no-repeat;
     background-size: cover;
-    .about-container{
+    position: relative;
+    .imgAbout{
+        position: absolute;
+        width: 20vw;
+        height: 20vw;
+        top: -8vw;
+        left: 66vw;
+    }
+    .imgAbout2{
+        position: absolute;
+        top: 8vw;
+        right: 6vw;
+        width: 9.278vw;
+        height: 9.278vw;
+    }
+    .rayoAbout{
+        position: absolute;
+        top: -4vw;
+        left: 0px;
+        width: 74vw;
+        height: 43vw;
+        max-height: 39.25rem;
+    }
+
+    
+    .about-mensaje{
         position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .about-bordecarousel{
-            display: inline-block;
-            position: relative;
-            background: rgb(0, 0, 0);
-            clip-path: polygon(86% 0, 100% 50%, 86% 100%, 52% 98%, 54% 92%, 14% 100%, 0 50%, 16% 0);
-            max-width: 1057px;
-            width: 100%;
-            height: 352px;
-            .about-carousel{
-                position: absolute;
-                top: 7px;
-                left: 7px;
-                width: 1045px;
-                height: 340px;
-                clip-path: polygon(86% 0, 99.7% 50%, 86% 100%, 53% 98%, 55% 92%, 14% 100%, 0.1% 50%, 16% 0);
-                .carousel-item{
-                    height: 400px;
-                }
+        .msj1{
+            margin-top: 6%;
+            margin-left: 8%;
+            width: 21.25vw;
+            height: 7.153vw;
+            max-width: 347px;
+        }
+        .msj2{
+            margin-top: 6%;
+            margin-left: 8%;
+            position: absolute;
+            top: -25px;
+            top: -1.8vw;
+            left: 22px;
+            left: 1.3vw;
+            width: 25.122vw;
+            height: 8.189vw;   
+            max-width: 400px;
             }
         }
-        .carousel-indicators [data-bs-target] {
-            background-color: #B01018;
+        .tituloPrincipal{
+            top: 7.1vw;
+            left: 12.7vw;
+            transform: rotate(-7deg);      
+            font-size: 1.95vw;  
+            font-size: #{"min(1.95vw, 28px)"}; 
+            max-width: 292px;
+                
         }
+
+    }
+
+/*---------- CAROUSEL ABOUT ----------*/
+.about-container{
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 18%;
+    .about-bordecarousel{
+        display: inline-block;
+        position: relative;
+        background: rgb(0, 0, 0);
+        clip-path: polygon(86% 0, 100% 50%, 86% 100%, 52% 98%, 54% 92%, 14% 100%, 0 50%, 16% 0);
+        max-width: 1057px;
+        width: 100%;
+        height: 352px;
+        .about-carousel{
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 1045px;
+            height: 340px;
+            clip-path: polygon(86% 0, 99.7% 50%, 86% 100%, 53% 98%, 55% 92%, 14% 100%, 0.1% 50%, 16% 0);
+            .carousel-item{
+                height: 400px;
+            }
+        }
+    }
+    .carousel-indicators [data-bs-target] {
+        background-color: #B01018;
     }
 }
 
+.nosotros{
+    background-image: url(../img/index/bg-punteado.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .div-nosotros{
+        position: relative;
+        top: -13vw;
+        z-index: 1;
+    }
+    .boton-nosotros{
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .boton-texto{
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: $font-secundaria;
+        font-size: 18px;
+        color: white;
+    }
+    .text{
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 974px;
+        height: 139px;
+    }
+    .nosotros__title{
+        font-family: $font-secundaria;
+        font-size: 24px;
+    }
+    .nosotros__text{
+        font-family: $font-terciaria;
+        font-size: 21px;
+        word-break: break-all;
+    }
+    .nosotros-fondonegro{
+        position: relative;
+        top: -55.1vw;
+    }
+    .redes-contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .botones-redes{
+            display: flex;
+            margin-top: 3.8rem;
+        }
+        .container-botones-redes:nth-child(1){
+            margin-right: 20px;
+        }
+        .container-botones-redes{
+            position: relative;
+            width: fit-content;
+            .texto-redes{
+                color: white;
+                width: fit-content;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 18px;
+            }
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top:200px;
+        z-index: 1;
+        max-width: 1260px;
+        margin: 8% 55px 0px 55px;
+        .tituloSecundario{
+            margin-bottom: 4px;
+        }
+        article{
+            margin-left: 2%;
+            .seccionRedes:not(:first-child){
+                margin-top: 40px;
+
+            }
+        }
+    }
+    .carousel-redes-borde{
+        position: relative;
+        flex-basis: 685px;
+        height: 930px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #E5191E;
+        background-color: black;
+        .about-mensaje{
+            position: absolute;
+            top: -23px;
+            left: -82px;
+            .msj1{
+                margin-top: 6%;
+                margin-left: 8%;
+                max-width: 347px;
+            }
+            .msj2{
+                margin-top: 6%;
+                margin-left: 8%;
+                position: absolute;
+                top: -25px;
+                left: 22px;
+                max-width: 400px;
+                }
+            }
+            .tituloPrincipal{
+                top: 34px;
+                left: 176px;
+                transform: rotate(-7deg);      
+                max-width: 292px;
+                    
+            }
+        .carousel-redes{
+            flex-basis: 645px;
+            height: 878px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border: 5px solid #E5191E;
+        }
+    }
+
+}
+
+.sumate{
+    background-image: url('../img/index/sumate-fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sumate-mensaje{
+        position: relative;
+        left: -25.3vw;
+        top: 0vw;
+        .msj1-sumate{
+            width: 35.287vw;
+            max-width: 510px;
+        }
+        .msj2-sumate{
+            position: absolute;
+            width: 52.431vw;
+            max-width: 760px;
+            top: -3vw;
+            left: -7vw;
+        }
+        .sumate-titulo{
+            top: 53px;
+            left: 60px;
+            transform: rotate(-10deg);
+            font-size: #{"min(2.4vw, 38px)"}; 
+        }
+    }
+    .container-sumate{
+        margin-top: 108px;
+        .parrafo-sumate{
+            max-width: 1042px;
+            margin-top: 10px;
+        }
+        .boton-sumate{
+            position: relative;
+            margin-top: 60px;
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #AD0F17;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+    
+
+@media (min-width:1800px) {
+    .sumate{
+        .sumate-mensaje{
+            .sumate-titulo{
+                top: 40px;
+            }
+        }
+    }
+}
 
 @media (max-width:1440px) {
 

@@ -12,16 +12,32 @@ $clr-red: #E4191E;
     src: url('../fonts/AldotheApache.ttf');
 }
 
-*{
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: normal;
+}
+h1,
+h2,h3,h4,h5,h6 {
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    line-height: normal;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
     color: white;
 }
-
+@import 'generales';
 @import 'index';
+
 
 

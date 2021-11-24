@@ -9,14 +9,47 @@
 }
 
 * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+h1,
+h2, h3, h4, h5, h6 {
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  line-height: normal;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.tituloPrincipal {
+  font-family: "Aldo the Apache", sans-serif;
+  position: absolute;
+  color: white;
+  font-size: 28px;
+}
+
+.tituloSecundario {
+  font-family: "Norwester", sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+.textoParrafo {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 21px;
 }
 
 .header {
@@ -184,22 +217,83 @@ a {
   max-width: 100%;
 }
 
-/*---------- CAROUSEL ABOUT ----------*/
 .about {
-  height: 750px;
   background-image: url("../img/index/bg-punteado.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.about .about-container {
+.about .imgAbout {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: -8vw;
+  left: 66vw;
+}
+
+.about .imgAbout2 {
+  position: absolute;
+  top: 8vw;
+  right: 6vw;
+  width: 9.278vw;
+  height: 9.278vw;
+}
+
+.about .rayoAbout {
+  position: absolute;
+  top: -4vw;
+  left: 0px;
+  width: 74vw;
+  height: 43vw;
+  max-height: 39.25rem;
+}
+
+.about .about-mensaje {
+  position: relative;
+}
+
+.about .about-mensaje .msj1 {
+  margin-top: 6%;
+  margin-left: 8%;
+  width: 21.25vw;
+  height: 7.153vw;
+  max-width: 347px;
+}
+
+.about .about-mensaje .msj2 {
+  margin-top: 6%;
+  margin-left: 8%;
+  position: absolute;
+  top: -25px;
+  top: -1.8vw;
+  left: 22px;
+  left: 1.3vw;
+  width: 25.122vw;
+  height: 8.189vw;
+  max-width: 400px;
+}
+
+.about .tituloPrincipal {
+  top: 7.1vw;
+  left: 12.7vw;
+  transform: rotate(-7deg);
+  font-size: 1.95vw;
+  font-size: min(1.95vw, 28px);
+  max-width: 292px;
+}
+
+/*---------- CAROUSEL ABOUT ----------*/
+.about-container {
+  margin-top: 60px;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 18%;
 }
 
-.about .about-container .about-bordecarousel {
+.about-container .about-bordecarousel {
   display: inline-block;
   position: relative;
   background: black;
@@ -209,7 +303,7 @@ a {
   height: 352px;
 }
 
-.about .about-container .about-bordecarousel .about-carousel {
+.about-container .about-bordecarousel .about-carousel {
   position: absolute;
   top: 7px;
   left: 7px;
@@ -218,12 +312,236 @@ a {
   clip-path: polygon(86% 0, 99.7% 50%, 86% 100%, 53% 98%, 55% 92%, 14% 100%, 0.1% 50%, 16% 0);
 }
 
-.about .about-container .about-bordecarousel .about-carousel .carousel-item {
+.about-container .about-bordecarousel .about-carousel .carousel-item {
   height: 400px;
 }
 
-.about .about-container .carousel-indicators [data-bs-target] {
+.about-container .carousel-indicators [data-bs-target] {
   background-color: #B01018;
+}
+
+.nosotros {
+  background-image: url(../img/index/bg-punteado.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.nosotros .div-nosotros {
+  position: relative;
+  top: -13vw;
+  z-index: 1;
+}
+
+.nosotros .boton-nosotros {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nosotros .boton-texto {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Norwester", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.nosotros .text {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 974px;
+  height: 139px;
+}
+
+.nosotros .nosotros__title {
+  font-family: "Norwester", sans-serif;
+  font-size: 24px;
+}
+
+.nosotros .nosotros__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  word-break: break-all;
+}
+
+.nosotros .nosotros-fondonegro {
+  position: relative;
+  top: -55.1vw;
+}
+
+.nosotros .redes-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros .redes-contenedor .botones-redes {
+  display: flex;
+  margin-top: 3.8rem;
+}
+
+.nosotros .redes-contenedor .container-botones-redes:nth-child(1) {
+  margin-right: 20px;
+}
+
+.nosotros .redes-contenedor .container-botones-redes {
+  position: relative;
+  width: fit-content;
+}
+
+.nosotros .redes-contenedor .container-botones-redes .texto-redes {
+  color: white;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.nosotros .redes {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  z-index: 1;
+  max-width: 1260px;
+  margin: 8% 55px 0px 55px;
+}
+
+.nosotros .redes .tituloSecundario {
+  margin-bottom: 4px;
+}
+
+.nosotros .redes article {
+  margin-left: 2%;
+}
+
+.nosotros .redes article .seccionRedes:not(:first-child) {
+  margin-top: 40px;
+}
+
+.nosotros .carousel-redes-borde {
+  position: relative;
+  flex-basis: 685px;
+  height: 930px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #E5191E;
+  background-color: black;
+}
+
+.nosotros .carousel-redes-borde .about-mensaje {
+  position: absolute;
+  top: -23px;
+  left: -82px;
+}
+
+.nosotros .carousel-redes-borde .about-mensaje .msj1 {
+  margin-top: 6%;
+  margin-left: 8%;
+  max-width: 347px;
+}
+
+.nosotros .carousel-redes-borde .about-mensaje .msj2 {
+  margin-top: 6%;
+  margin-left: 8%;
+  position: absolute;
+  top: -25px;
+  left: 22px;
+  max-width: 400px;
+}
+
+.nosotros .carousel-redes-borde .tituloPrincipal {
+  top: 34px;
+  left: 176px;
+  transform: rotate(-7deg);
+  max-width: 292px;
+}
+
+.nosotros .carousel-redes-borde .carousel-redes {
+  flex-basis: 645px;
+  height: 878px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 5px solid #E5191E;
+}
+
+.sumate {
+  background-image: url("../img/index/sumate-fondo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sumate .sumate-mensaje {
+  position: relative;
+  left: -25.3vw;
+  top: 0vw;
+}
+
+.sumate .sumate-mensaje .msj1-sumate {
+  width: 35.287vw;
+  max-width: 510px;
+}
+
+.sumate .sumate-mensaje .msj2-sumate {
+  position: absolute;
+  width: 52.431vw;
+  max-width: 760px;
+  top: -3vw;
+  left: -7vw;
+}
+
+.sumate .sumate-mensaje .sumate-titulo {
+  top: 53px;
+  left: 60px;
+  transform: rotate(-10deg);
+  font-size: min(2.4vw, 38px);
+}
+
+.sumate .container-sumate {
+  margin-top: 108px;
+}
+
+.sumate .container-sumate .parrafo-sumate {
+  max-width: 1042px;
+  margin-top: 10px;
+}
+
+.sumate .container-sumate .boton-sumate {
+  position: relative;
+  margin-top: 60px;
+}
+
+.sumate .container-sumate .boton-sumate p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #AD0F17;
+  font-size: 18px;
+}
+
+@media (min-width: 1800px) {
+  .sumate .sumate-mensaje .sumate-titulo {
+    top: 40px;
+  }
 }
 
 @media (max-width: 1440px) {
